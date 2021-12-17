@@ -1,0 +1,39 @@
+.grid {
+	width: 450px;
+	height: 450px;
+	line-height: 0;
+}
+
+.grid .tile {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 140px;
+	height: 140px;
+	margin: 5px;
+	background-color: #fff;
+	border-radius: 4px;
+	outline: 0px solid #70ace8;
+	line-height: initial;
+	cursor: pointer;
+	transition: 0.125s ease;
+}
+
+.grid .tile.tile-used {
+	background-color: #b2d2f3;
+	cursor: default;
+}
+
+.grid .tile:not(.tile-used):hover {
+	outline: 5px solid #70ace8;
+}
+
+.grid .tile .label {
+	color: #222f3e;
+	font-size: 50px;
+	font-weight: 700;
+}
+
+.grid .tile:not(.tile-used) .label {
+	color: #fff;
+}
